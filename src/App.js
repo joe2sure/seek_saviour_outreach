@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import { Footer, Navbar } from './components';
 // import SermonsPage from './pages/SermonsPage';
 // import CampaignsPage from './pages/CampaignsPage';
