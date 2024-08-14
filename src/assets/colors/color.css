@@ -1,0 +1,28 @@
+:root {
+    /* Base colors */
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+  
+    /* Text colors */
+    --color-text-primary: var(--color-black);
+    --color-text-secondary: #333;
+    --color-text-tertiary: #888;
+  
+    /* Background colors */
+    --color-background-primary: var(--color-white);
+    --color-background-secondary: #ECD175;
+  
+    /* Accent colors */
+    --color-accent-primary: #ECCE68;
+    --color-accent-secondary: #F3E9C6;
+  
+    /* Link color */
+    --color-link: #0066cc;
+  
+    /* Button colors */
+    --color-button-primary: var(--color-black);
+    --color-button-text: var(--color-white);
+  
+    /* Input focus color */
+    --color-input-focus: #007bff;
+  }
