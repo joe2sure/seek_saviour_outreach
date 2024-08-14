@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('../../assets/fonts/caveat/static/Caveat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.welcome-section {
+  background-color: white;
+  padding: 120px 40px;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.welcome-section.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.welcome-underlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-size: 100px;
+  color: rgba(200, 200, 200, 0.3);
+  font-family: 'Dancing Script', cursive;
+  white-space: nowrap;
+  pointer-events: none;
+  text-align: center;
+}
+
+.welcome-underlay.top {
+  top: 20px;
+}
+
+.welcome-underlay.bottom {
+  bottom: 20px;
+}
+
+.welcome-cards-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.welcome-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.welcome-card {
+  flex: 0 1 300px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, opacity 0.5s ease;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.welcome-card.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.welcome-card:nth-child(1) {
+  transition-delay: 0.4s;
+}
+
+.welcome-card:nth-child(2) {
+  transition-delay: 0.8s;
+}
+
+.welcome-card:nth-child(3) {
+  transition-delay: 1.2s;
+}
+
+.welcome-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.welcome-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  max-width: 80%;
+}
+
+.card-content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card-content a {
+  color: white;
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .welcome-cards {
+    flex-wrap: wrap;
+  }
+
+  .welcome-card {
+    flex: 0 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-section {
+    padding: 80px 20px;
+  }
+
+  .welcome-cards {
+    flex-direction: column;
+  }
+
+  .welcome-card {
+    flex: 1 1 auto;
+    margin-bottom: 20px;
+  }
+
+  .welcome-underlay {
+    font-size: 60px;
+  }
+}

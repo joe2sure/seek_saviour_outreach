@@ -1,0 +1,111 @@
+.locationsSection {
+  background-color: var(--color-background);
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.titleColumn {
+  flex: 1;
+  position: relative;
+}
+
+.mainTitle {
+  font-size: 48px;
+  font-weight: bold;
+  color: var(--color-text-primary);
+  position: relative;
+  z-index: 2;
+}
+
+.subtitle {
+  font-size: 24px;
+  color: var(--color-text-secondary);
+  position: absolute;
+  top: 60px;
+  left: 5px;
+  z-index: 1;
+}
+
+.contentColumn {
+  flex: 1;
+  padding-left: 40px;
+}
+
+.locationImage {
+  width: 392px;
+  height: 280px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.locationTitle {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--color-text-primary);
+  margin: 20px 0;
+}
+
+.infoGrid {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.infoColumn {
+  flex: 1;
+}
+
+.infoTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.infoText {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.directionsLink {
+  color: var(--color-link);
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+/* Animation styles */
+.animatedSection {
+  overflow: hidden;
+}
+
+.animatedElement {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate .animatedElement {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .titleColumn {
+    margin-bottom: 40px;
+  }
+  .contentColumn {
+    padding-left: 0;
+  }
+  .locationImage {
+    width: 100%;
+    height: auto;
+  }
+}
