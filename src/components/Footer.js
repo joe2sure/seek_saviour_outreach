@@ -10,8 +10,8 @@ const Footer = () => {
         <div className={styles.column}>
           <img src={churchLogo} alt="Seek Saviour gospel outreach" className={styles.logo} />
           <h3 className={styles.columnTitle}>Contact</h3>
-          <p className={styles.contactInfo}>(001)321-123-4567</p>
-          <p className={styles.contactInfo}>Joe2sure1@gmail.com</p>
+          <p className={styles.contactInfo}>Enquiries:  +447405733120</p>
+          <p className={styles.contactInfo}>seeksaviour.outreach@gmail.com</p>
           <div className={styles.socialIcons}>
             <FaFacebookF className={styles.icon} />
             <FaInstagram className={styles.icon} />
@@ -21,8 +21,8 @@ const Footer = () => {
           <div className={styles.emptySpace}></div>
           <h3 className={styles.columnTitle}>Location</h3>
           <p className={styles.locationInfo}>Seek Saviour Gospel Outreach</p>
-          <p className={styles.locationInfo}>704 11th Ave</p>
-          <p className={styles.locationInfo}>Wolverhampton, Wolv 55416</p>
+          <p className={styles.locationInfo}>WV1 3NP</p>
+          <p className={styles.locationInfo}>17 Victoria Street WV1 3NP </p>
         </div>
         <div className={styles.column}>
           <h3 className={styles.columnTitle}>Stay Connected</h3>

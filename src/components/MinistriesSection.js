@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 
 import '../styles/components/MinistriesSection.css';
-import ministrySectionImg from '../assets/images/ministriesSectionImg.jpg';
+import ministrySectionImg from '../assets/images/bible.jpg';
 import youthImg from '../assets/images/youthImg.jpg';
 import outReachImg from '../assets/images/outreachImg.jpg';
 import leadershipImg from '../assets/images/leadershipImg.jpg';
@@ -88,7 +88,7 @@ const MinistriesSection = () => {
           <div className="pastors-content">
             <div className="pastors-title">
               <h2>Our Pastors</h2>
-              <h3>Emmanuel & Peace</h3>
+              <h3>Pst Emmanuel Onwe & Pst Mrs Peace Onwe</h3>
             </div>
             <p>Our church has a strong connection to the community and commenced on October 2023. We are a generational contemporary church with a rich history. We really are a place where you can belong and grow! Emmanuel & Peace have two sons, and they believe in rising up the next generation with the wisdom of those who have gone before. Emmanuel & Peace have a practical outlook on life and love in community. It's our passion to see you get connected, grow in your relationship with God and others and live your best life.</p>
             <em>You will love it here!</em>

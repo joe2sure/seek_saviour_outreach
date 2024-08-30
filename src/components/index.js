@@ -12,3 +12,4 @@ export {default as FAQMainSection } from './FAQ/mainSection';
 export { default as LocationSection } from './LocationSection';
 export { default as ConnectSection } from './ConnectSection';
 export { default as Footer } from './Footer';
+export {default as GallerySection } from './GallerySection';

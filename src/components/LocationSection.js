@@ -50,13 +50,13 @@ const LocationsSection = () => {
           <div className={styles.infoGrid}>
             <div className={styles.infoColumn}>
               <h4 className={styles.infoTitle}>ADDRESS:</h4>
-              <p className={styles.infoText}>148 Florence Trail</p>
-              <p className={styles.infoText}>Valley. MN 5124</p>
+              <p className={styles.infoText}>17 Victoria Street</p>
+              <p className={styles.infoText}>WV1 3NP</p>
             </div>
             <div className={styles.infoColumn}>
               <h4 className={styles.infoTitle}>SERVICE TIME:</h4>
-              <p className={styles.infoText}>Saturdays 4pm</p>
-              <p className={styles.infoText}>Sundays 9am</p>
+              {/* <p className={styles.infoText}>Saturdays 4pm</p> */}
+              <p className={styles.infoText}>Sundays 10am</p>
             </div>
           </div>
           <a href="#" className={styles.directionsLink}>Get Directions</a>

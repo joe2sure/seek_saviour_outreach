@@ -32,12 +32,28 @@
   cursor: pointer;
 }
 
-.nav-links span {
+.nav-links a, .nav-links span {
   color: white;
   text-decoration: none;
   font-size: 16px;
   transition: color 0.3s ease;
 }
+
+/* Styling for active link */
+.nav-item.active a, .nav-item.active span {
+  color: var(--active-color);
+}
+
+/* Prevent underline for active links */
+.nav-item.active a, .nav-item.active span {
+  text-decoration: none;
+}
+
+/* Hover styling */
+.nav-links a:hover, .nav-links span:hover {
+  color: var(--hover-color);
+}
+
 
 .nav-links span:hover,
 .nav-item.active span {

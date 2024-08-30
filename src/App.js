@@ -6,6 +6,7 @@ import { Footer, Navbar } from './components';
 // import MinistriesPage from './pages/MinistriesPage';
 import './styles/index.css';
 import HomePage from './Pages/Home';
+import CharityPage from './Pages/Charity';
 
 function App() {
   return (
@@ -15,8 +16,8 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           {/* <Route path="/sermons" element={<SermonsPage />} />
-          <Route path="/campaigns" element={<CampaignsPage />} />
-          <Route path="/ministries" element={<MinistriesPage />} /> */}
+          <Route path="/campaigns" element={<CampaignsPage />} /> */}
+          <Route path="/charity" element={<CharityPage />} />
         </Routes>
         <Footer/>
       </div>

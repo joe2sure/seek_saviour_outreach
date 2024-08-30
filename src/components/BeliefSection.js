@@ -1,9 +1,25 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import '../styles/components/BeliefSection.css';
+import pastorPreach1 from '../assets/videos/pastor_preach1.mp4'; 
 import homeImg1 from '../assets/images/homeImg1.jpg';
-// import homepageVideo1 from '../assets/videos/homepageVideo1';
+import { Play } from 'lucide-react';
+
 
 const BeliefsSection = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const videoRef = useRef(null);
+
+  const togglePlay = () => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause();
+      } else {
+        videoRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
+
   return (
     <section className="beliefs-section">
       <div className="beliefs-content">
@@ -29,11 +45,17 @@ const BeliefsSection = () => {
 
 
       <div className="video-section">
-        <video controls>
-          {/* <source src='../assets/videos/homepageVideo1' type="video/quicktime" /> */}
-          <source src="../assets/videos/beliefSectionVideo.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <div className="video-container">
+          <video ref={videoRef} onClick={togglePlay} controls>
+            <source src={pastorPreach1} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          {!isPlaying && (
+            <button className="play-button" onClick={togglePlay}>
+              <Play size={48} />
+            </button>
+          )}
+        </div>
       </div>
     </section>
   );
