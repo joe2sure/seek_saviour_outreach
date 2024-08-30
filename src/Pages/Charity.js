@@ -1,13 +1,17 @@
 import React from 'react';
+import { CharityBanner, CharityInfoSection, CharityPromotionSection } from '../components/charity/index.js';
+// import { CharityBanner } from '../components/charity';
 
 
 
 const CharityPage = () => {
     return (
-        <div>
-            <h1>Hello</h1>
-        </div>
+      <div>
+        <CharityBanner />
+        <CharityInfoSection />
+        <CharityPromotionSection/>
+      </div>
     );
-}
-
-export default CharityPage;
+  };
+  
+  export default CharityPage;
