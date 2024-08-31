@@ -1,6 +1,6 @@
 import React from 'react';
-import { CharityBanner, CharityInfoSection, CharityPromotionSection } from '../components/charity/index.js';
-// import { CharityBanner } from '../components/charity';
+import { CharityBanner, CharityDonationCTA, CharityInfoSection, CharityPromotionSection, CharityServicesSection } from '../components/charity/index.js';
+
 
 
 
@@ -10,6 +10,8 @@ const CharityPage = () => {
         <CharityBanner />
         <CharityInfoSection />
         <CharityPromotionSection/>
+        <CharityServicesSection />
+        <CharityDonationCTA/>
       </div>
     );
   };
