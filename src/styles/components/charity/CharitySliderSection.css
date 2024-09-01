@@ -1,0 +1,108 @@
+.wpo-instagram-section {
+    padding: 60px 0;
+  }
+  
+  .instagram-wrap {
+    position: relative;
+  }
+  
+  .instagram-slider {
+    margin: 0 -5px; /* Adjust for the 10px total gap between slides */
+  }
+  
+  .instagram-card {
+    padding: 0 5px; /* Creates 10px gap between slides */
+  }
+  
+  .image-container {
+    position: relative;
+    width: 390px;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .instagram-card:hover .overlay {
+    opacity: 1;
+  }
+  
+  .content {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .content span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .content h2 {
+    font-size: 18px;
+    margin: 0 0 15px 0;
+  }
+  
+  .popup-icon {
+    background-color: #EBA813;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin: 0 auto;
+  }
+  
+  .instagram-card:hover .popup-icon {
+    transform: scale(1.1);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1200px) {
+    .image-container {
+      width: 100%;
+      height: 0;
+      padding-bottom: 103%; /* Maintains aspect ratio */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .instagram-slider {
+      margin: 0;
+    }
+    .instagram-card {
+      padding: 0;
+    }
+  }
+  
+  /* Ensure Slick slider doesn't interfere with our styling */
+  .slick-slide {
+    margin: 0 5px;
+  }
+  
+  .slick-list {
+    margin: 0 -5px;
+  }

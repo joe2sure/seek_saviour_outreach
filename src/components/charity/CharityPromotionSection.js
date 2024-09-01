@@ -4,6 +4,7 @@ import '../../styles/components/charity/CharityPromotionSection.css';
 import image1 from '../../assets/images/bible.jpg';
 import image2 from '../../assets/images/faithImg.jpg';
 import image3 from '../../assets/images/baptismImg.jpg';
+import charityPromotionImg from '../../assets/images/charity/charity-promotion-img.jpg';
 
 const CharityPromotionSection = () => {
   // Array of card data with color values for progress bars
@@ -38,7 +39,7 @@ const CharityPromotionSection = () => {
     <section className="charity-promotion-section">
       <div className="charity-promotion-top">
         <div className="charity-promotion-image">
-          <img src="/path/to/main-image.jpg" alt="Promoting child safety" className="main-image" />
+          <img src={charityPromotionImg} alt="Promoting child safety" className="main-image" />
         </div>
         <div className="charity-promotion-content">
           <h2>Promoting The Safety and Rights of Children</h2>

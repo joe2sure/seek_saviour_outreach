@@ -1,0 +1,149 @@
+.charity-events-section {
+    padding: 80px 0;
+    background-color: #fff;
+  }
+  
+  .charity-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .charity-events-subtitle {
+    font-size: 24px;
+    text-align: center;
+    color: #ECA714;
+    margin-bottom: 16px;
+  }
+  
+  .charity-events-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #010038;
+    margin-bottom: 48px;
+  }
+  
+  .charity-events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .charity-event-card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .charity-event-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .charity-event-date {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #ECA714;
+    color: #fff;
+    padding: 10px 15px;
+    text-align: center;
+    font-weight: bold;
+    z-index: 1;
+  }
+  
+  .charity-event-date span {
+    font-size: 24px;
+    display: block;
+  }
+  
+  .charity-event-date-shape {
+    position: absolute;
+    bottom: -14px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 19px 14px 0;
+    border-color: transparent #ECA714 transparent transparent;
+  }
+  
+  .charity-event-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .charity-event-text {
+    padding: 20px;
+  }
+  
+  .charity-event-text h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .charity-event-text h3 a {
+    color: #010038;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .charity-event-text h3 a:hover {
+    color: #ECA714;
+  }
+  
+  .charity-event-info {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .charity-event-info span {
+    display: flex;
+    align-items: center;
+  }
+  
+  .charity-event-info svg {
+    margin-right: 5px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .charity-events-section {
+      padding: 60px 0;
+    }
+  
+    .charity-events-subtitle {
+      font-size: 20px;
+    }
+  
+    .charity-events-title {
+      font-size: 28px;
+      margin-bottom: 36px;
+    }
+  
+    .charity-event-text h3 {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .charity-events-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .charity-event-info {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .charity-event-info span:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }

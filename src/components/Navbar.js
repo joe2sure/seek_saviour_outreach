@@ -14,9 +14,6 @@ const Navbar = () => {
 
   const navLinks = [
     { label: 'Home', href: '/' },
-    { label: 'Pages', href: '#', subLinks: ['About Us', 'Blog', 'Contacts', 'Shop'] },
-    { label: 'Sermons', href: '#', subLinks: ['View All', 'Humility in Prayer', 'Jesus Came to bring Joy'] },
-    { label: 'Campaigns', href: '#', subLinks: ['View All', "Children's Outreach Summer Camp", 'Equipping Church Leaders'] },
     {
       label: 'Charity',
       href: '#',
@@ -27,6 +24,9 @@ const Navbar = () => {
         { label: 'Life Groups', href: '#' },
       ],
     },
+    { label: 'Pages', href: '#', subLinks: ['About Us', 'Blog', 'Contacts', 'Shop'] },
+    { label: 'Sermons', href: '#', subLinks: ['View All', 'Humility in Prayer', 'Jesus Came to bring Joy'] },
+    { label: 'Campaigns', href: '#', subLinks: ['View All', "Children's Outreach Summer Camp", 'Equipping Church Leaders'] },
   ];
 
   const toggleMenu = () => {

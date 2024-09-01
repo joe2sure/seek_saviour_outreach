@@ -1,170 +1,212 @@
 .charity-banner-section {
-    background-color: #FBF8F2;
-    padding: 60px 0;
-    margin-top: 60px;
-    overflow: hidden;
-  }
-  
-  .charity-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
-  
-  .charity-banner-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
+  background-color: #FBF8F2;
+  padding: 60px 0;
+  margin-top: 60px;
+  overflow: hidden;
+}
+
+.charity-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.charity-banner-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.charity-left-column, .charity-right-column {
+  flex-basis: 100%;
+}
+
+@media (min-width: 768px) {
   .charity-left-column, .charity-right-column {
     flex-basis: 48%;
   }
-  
-  .charity-slogan {
-    color: #EC9718;
-    font-size: 24px;
-    margin-bottom: 16px;
-  }
-  
-  .charity-headline {
-    color: #010038;
-    font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 16px;
-  }
-  
-  .charity-description {
-    margin-bottom: 24px;
-  }
-  
+}
+
+.charity-slogan {
+  color: #EC9718;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.charity-headline {
+  color: #010038;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.charity-description {
+  margin-bottom: 24px;
+}
+
+.charity-video-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.charity-video-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.charity-video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.charity-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #EC9718;
+  transition: all 0.3s ease;
+}
+
+.charity-play-button.playing {
+  animation: charity-heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes charity-heartbeat {
+  0% { transform: translate(-50%, -50%) scale(1); }
+  14% { transform: translate(-50%, -50%) scale(1.3); }
+  28% { transform: translate(-50%, -50%) scale(1); }
+  42% { transform: translate(-50%, -50%) scale(1.3); }
+  70% { transform: translate(-50%, -50%) scale(1); }
+}
+
+.charity-campaign-info h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.charity-campaign-info p {
+  font-size: 16px;
+}
+
+.charity-right-column {
+  position: relative;
+  margin-top: 30px;
+}
+
+.charity-image {
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%; /* Adjust this value to control the aspect ratio */
+  position: relative;
+  overflow: hidden;
+}
+
+.charity-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.charity-stats-card {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.charity-stats-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.charity-stats-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+}
+
+.charity-stats-text h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.charity-stats-text p {
+  font-size: 14px;
+}
+
+.charity-stats-bottom {
+  display: flex;
+}
+
+.charity-volunteer-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: -10px;
+}
+
+.charity-avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #e0e0e0;
+}
+
+.charity-avatar-1 { background-color: #FFD700; }
+.charity-avatar-2 { background-color: #FF6347; }
+.charity-avatar-3 { background-color: #40E0D0; }
+.charity-avatar-4 { background-color: #9370DB; }
+.charity-avatar-5 { background-color: #3CB371; }
+.charity-avatar-6 { background-color: #FF69B4; }
+
+@media (max-width: 767px) {
   .charity-video-section {
-    display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
+
   .charity-video-container {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    margin-right: 20px;
+    margin-right: 0;
   }
-  
-  .charity-video-container video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+  .charity-campaign-info {
+    margin-top: 20px;
   }
-  
-  .charity-play-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #EC9718;
-    transition: all 0.3s ease;
-  }
-  
-  .charity-play-button.playing {
-    animation: charity-heartbeat 1.5s ease-in-out infinite;
-  }
-  
-  @keyframes charity-heartbeat {
-    0% { transform: translate(-50%, -50%) scale(1); }
-    14% { transform: translate(-50%, -50%) scale(1.3); }
-    28% { transform: translate(-50%, -50%) scale(1); }
-    42% { transform: translate(-50%, -50%) scale(1.3); }
-    70% { transform: translate(-50%, -50%) scale(1); }
-  }
-  
-  .charity-campaign-info h3 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 8px;
-  }
-  
-  .charity-campaign-info p {
-    font-size: 16px;
-  }
-  
-  .charity-right-column {
-    position: relative;
-  }
-  
-  .charity-image-placeholder {
-    width: 100%;
-    height: 400px;
-    background-color: #e0e0e0;
-  }
-  
+
   .charity-stats-card {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: 20px;
   }
-  
-  .charity-stats-top {
-    display: flex;
-    align-items: center;
-    margin-bottom: 16px;
-  }
-  
-  .charity-stats-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #f0f0f0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 16px;
-  }
-  
-  .charity-stats-text h3 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 4px;
-  }
-  
-  .charity-stats-text p {
-    font-size: 14px;
-  }
-  
-  .charity-stats-bottom {
-    display: flex;
-  }
-  
-  .charity-volunteer-avatar {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-right: -10px;
-  }
-  
-  .charity-avatar-placeholder {
-    width: 100%;
-    height: 100%;
-    background-color: #e0e0e0;
-  }
-  
-  .charity-avatar-1 { background-color: #FFD700; }
-  .charity-avatar-2 { background-color: #FF6347; }
-  .charity-avatar-3 { background-color: #40E0D0; }
-  .charity-avatar-4 { background-color: #9370DB; }
-  .charity-avatar-5 { background-color: #3CB371; }
-  .charity-avatar-6 { background-color: #FF69B4; }
+}

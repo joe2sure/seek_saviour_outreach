@@ -1,6 +1,7 @@
 import React from 'react';
 import { Heart, Globe, Handshake, Target, Eye } from 'lucide-react';
 import '../../styles/components/charity/CharityInfoSection.css';
+import charityInfoImg from '../../assets/images/charity/charity-info-img.jpg';
 
 const CharityInfoSection = () => {
   const cards = [
@@ -26,8 +27,8 @@ const CharityInfoSection = () => {
           ))}
         </div>
         <div className="charity-info-content">
-          <div className="charity-info-image">
-            <div className="charity-image-placeholder"></div>
+        <div className="charity-info-image">
+            <img src={charityInfoImg} alt="Charity in action" className="charity-image" />
           </div>
           <div className="charity-info-text">
             <h4>Welcome To Charius</h4>

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Play, Heart } from 'lucide-react';
 import '../../styles/components/charity/CharityBanner.css';
+import bannerImg1 from '../../assets/images/charity/bannerImg1.jpg';
+import charityBannerVid from '../../assets/videos/video_small2.mp4';
 
 const CharityBanner = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -28,7 +30,7 @@ const CharityBanner = () => {
             <p className="charity-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <div className="charity-video-section">
               <div className="charity-video-container">
-                <video src="/api/placeholder/400/400" loop muted playsInline>
+                <video src={charityBannerVid} type="video/mp4" loop muted playsInline>
                   Your browser does not support the video tag.
                 </video>
                 <button className={`charity-play-button ${isPlaying ? 'playing' : ''}`} onClick={toggleVideo}>
@@ -42,7 +44,9 @@ const CharityBanner = () => {
             </div>
           </div>
           <div className="charity-right-column">
-            <div className="charity-image-placeholder"></div>
+            <div className="charity-image">
+              <img src={bannerImg1} alt="Charity Banner" />
+            </div>
             <div className="charity-stats-card">
               <div className="charity-stats-top">
                 <div className="charity-stats-icon">

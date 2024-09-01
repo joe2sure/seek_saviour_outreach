@@ -1,5 +1,5 @@
 import React from 'react';
-import { CharityBanner, CharityDonationCTA, CharityInfoSection, CharityPromotionSection, CharityServicesSection } from '../components/charity/index.js';
+import { CharityBanner, CharityDonationCTA, CharityEventsSection, CharityFunFactSection, CharityInfoSection, CharityPartnersSection, CharityPromotionSection, CharityServicesSection, CharitySliderSection, CharityTestimonialSection } from '../components/charity/index.js';
 
 
 
@@ -12,6 +12,11 @@ const CharityPage = () => {
         <CharityPromotionSection/>
         <CharityServicesSection />
         <CharityDonationCTA/>
+        <CharityEventsSection/>
+        <CharityFunFactSection />
+        <CharitySliderSection/>
+        <CharityTestimonialSection />
+        <CharityPartnersSection/>
       </div>
     );
   };
