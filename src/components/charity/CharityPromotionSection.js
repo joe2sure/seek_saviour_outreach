@@ -1,8 +1,8 @@
 import React from 'react';
 import '../../styles/components/charity/CharityPromotionSection.css';
-import image1 from '../../assets/images/bible.jpg';
-import image2 from '../../assets/images/faithImg.jpg';
-import image3 from '../../assets/images/baptismImg.jpg';
+import image1 from '../../assets/images/charity/charity-slider-img2.jpg';
+import image2 from '../../assets/images/charity/charity-promotion-img2.jpg';
+import image3 from '../../assets/images/charity/charity-promotion-img1.jpg';
 import charityPromotionImg from '../../assets/images/charity/charity-promotion-img.jpg';
 
 const CharityPromotionSection = () => {

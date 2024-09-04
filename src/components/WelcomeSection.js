@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import '../styles/components/WelcomeSection.css';
 import firstImg from '../assets/images/firstImg.jpg';
-import secondImg from '../assets/images/secondImg.jpg';
+import secondImg from '../assets/images/pastor_preach2.jpg';
 import thirdImg from '../assets/images/thirdImg.jpg';
 
 const WelcomeSection = () => {
