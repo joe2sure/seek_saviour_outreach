@@ -4,6 +4,14 @@ import '../../styles/components/charity/CharityBanner.css';
 import bannerImg1 from '../../assets/images/charity/bannerImg1.jpg';
 import charityBannerVid from '../../assets/videos/video_small2.mp4';
 
+// Import the volunteer avatar images
+import avatar1 from '../../assets/images/charity/avatars/volunteer1.jpg';
+import avatar2 from '../../assets/images/charity/avatars/volunteer2.jpg';
+import avatar3 from '../../assets/images/charity/avatars/volunteer3.jpg';
+import avatar4 from '../../assets/images/charity/avatars/volunteer4.jpg';
+import avatar5 from '../../assets/images/charity/avatars/volunteer2.jpg';
+import avatar6 from '../../assets/images/charity/avatars/volunteer3.jpg';
+
 const CharityBanner = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -20,6 +28,9 @@ const CharityBanner = () => {
     }
   };
 
+  // Array of volunteer avatars
+  const volunteerAvatars = [avatar1, avatar2, avatar3, avatar4, avatar5, avatar6];
+
   return (
     <section className="charity-banner-section">
       <div className="charity-container">
@@ -27,7 +38,9 @@ const CharityBanner = () => {
           <div className="charity-left-column">
             <h2 className="charity-slogan">Give them a chance.</h2>
             <h1 className="charity-headline">Believe in The Better Future of Others.</h1>
-            <p className="charity-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p className="charity-description">
+              Your support can transform lives. Together, we can provide essential resources, education, and opportunities to those in need. Let's make a difference one step at a time.
+            </p>
             <div className="charity-video-section">
               <div className="charity-video-container">
                 <video src={charityBannerVid} type="video/mp4" loop muted playsInline>
@@ -54,13 +67,13 @@ const CharityBanner = () => {
                 </div>
                 <div className="charity-stats-text">
                   <h3>120+</h3>
-                  <p>Happy Volunteer</p>
+                  <p>Happy Volunteers</p>
                 </div>
               </div>
               <div className="charity-stats-bottom">
-                {[...Array(6)].map((_, index) => (
+                {volunteerAvatars.map((avatar, index) => (
                   <div key={index} className={`charity-volunteer-avatar charity-avatar-${index + 1}`}>
-                    <div className="charity-avatar-placeholder"></div>
+                    <img src={avatar} alt={`Volunteer ${index + 1}`} className="charity-avatar-image" />
                   </div>
                 ))}
               </div>

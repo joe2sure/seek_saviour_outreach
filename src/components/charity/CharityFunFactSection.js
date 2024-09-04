@@ -54,9 +54,9 @@ const CharityFunFactSection = () => {
       <div className="container">
         <div className="fun-fact-wrap">
           <div className="fun-fact-row">
-            <FunFactItem number={260} text="Total Campaigns" />
-            <FunFactItem number={26} suffix="M" text="Total Fund Raised" />
-            <FunFactItem number={120} text="Happy Volunteers" />
+            <FunFactItem number={30} text="Total Campaigns" />
+            <FunFactItem number={5} suffix="M" text="Total Fund Raised" />
+            <FunFactItem number={50} text="Happy Volunteers" />
             <FunFactItem number={15} text="Years of Fund Raising" />
           </div>
         </div>

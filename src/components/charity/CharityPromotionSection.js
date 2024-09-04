@@ -1,4 +1,3 @@
-// src/components/charity/CharityPromotionSection.js
 import React from 'react';
 import '../../styles/components/charity/CharityPromotionSection.css';
 import image1 from '../../assets/images/bible.jpg';

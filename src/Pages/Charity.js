@@ -1,13 +1,24 @@
 import React from 'react';
-import { CharityBanner, CharityDonationCTA, CharityEventsSection, CharityFunFactSection, CharityInfoSection, CharityPartnersSection, CharityPromotionSection, CharityServicesSection, CharitySliderSection, CharityTestimonialSection } from '../components/charity/index.js';
-
-
-
+import { 
+  CharityBanner, 
+  CharityDonationCTA, 
+  CharityEventsSection, 
+  CharityFunFactSection, 
+  CharityInfoSection, 
+  CharityPartnersSection, 
+  CharityPromotionSection, 
+  CharityServicesSection, 
+  CharitySliderSection, 
+  CharityTestimonialSection 
+} from '../components/charity/index.js';
+import '../styles/components/charity/Charity.css';
+import '../styles/components/charity/Charity.css';
 
 const CharityPage = () => {
-    return (
-      <div>
-        <CharityBanner />
+  return (
+    <div className="charity-page">
+      <CharityBanner />
+      <main className="charity-main-content">
         <CharityInfoSection />
         <CharityPromotionSection/>
         <CharityServicesSection />
@@ -17,8 +28,9 @@ const CharityPage = () => {
         <CharitySliderSection/>
         <CharityTestimonialSection />
         <CharityPartnersSection/>
-      </div>
-    );
-  };
-  
-  export default CharityPage;
+      </main>
+    </div>
+  );
+};
+
+export default CharityPage;

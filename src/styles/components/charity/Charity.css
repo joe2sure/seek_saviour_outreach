@@ -1,0 +1,27 @@
+.charity-page {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  .charity-main-content {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Ensure all sections within the main content are responsive */
+  .charity-main-content > section {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .charity-main-content > section {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }

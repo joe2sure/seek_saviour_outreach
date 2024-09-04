@@ -1,6 +1,5 @@
-/* CharityDonationCTA.css */
 .charity-donation-cta {
-    background-image: url('../../../assets/images/charity/svg/donation.svg'); /* Replace with your actual image URL */
+    background-image: url('../../../assets/images/charity/bg.jpg'); /* Replace with your actual image URL */
     background-size: cover;
     background-position: center;
     height: 458px;
@@ -12,7 +11,7 @@
   .charity-donation-overlay {
     background-color: rgba(50, 108, 100, 0.8);
     width: 100%;
-    max-width: 882.4px;
+    max-width: 900px;
     height: 418px;
     display: flex;
     justify-content: center;
@@ -43,6 +42,7 @@
     font-weight: bold;
     line-height: 1.2;
     margin-bottom: 10px;
+    color: #ffffff;
   }
   
   .charity-donation-button {
