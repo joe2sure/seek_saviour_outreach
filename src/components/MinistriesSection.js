@@ -1,7 +1,8 @@
 import React, { useRef, useEffect, useState } from 'react';
 
 import '../styles/components/MinistriesSection.css';
-import ministrySectionImg from '../assets/images/bible.jpg';
+// import ministrySectionImg from '../assets/images/bible.jpg';
+import ministrySectionImg from '../assets/images/wife-husband.png';
 import youthImg from '../assets/images/youthImg.jpg';
 import outReachImg from '../assets/images/outreachImg.jpg';
 import leadershipImg from '../assets/images/leadershipImg.jpg';
