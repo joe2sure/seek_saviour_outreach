@@ -1,0 +1,30 @@
+.church-history {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .church-history h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .church-history p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .church-history {
+      padding: 1.5rem;
+    }
+  
+    .church-history h2 {
+      font-size: 1.5rem;
+    }
+  }

@@ -13,6 +13,7 @@ import {
   LocationSection,
   ConnectSection,
   GallerySection,
+  MissionVisionSection,
 } from "../components";
 
 const HomePage = () => {
@@ -20,6 +21,7 @@ const HomePage = () => {
     <>
       <BannerSection />
       <MissionStatement />
+      <MissionVisionSection/>
       <WelcomeSection />
       <BeliefsSection />
       <ValuesSection />

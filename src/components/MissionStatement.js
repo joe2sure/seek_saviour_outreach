@@ -35,7 +35,8 @@ const MissionStatement = () => {
         A church that believes in Jesus, a <span className="highlight">church that impact all and sundry</span> through God's Word
       </h2>
       <p className="mission-description">
-        Overwhelmed by the gift of salvation we found in Jesus, we have a heart for authentic worship, are passionate about establishing God's kingdom across the earth
+      It is a pleasure to have you here. We hope you have a wonderful 
+      experience and look forward to seeing you at one of our services.
       </p>
     </section>
   );

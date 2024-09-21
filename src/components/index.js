@@ -13,3 +13,4 @@ export { default as LocationSection } from './LocationSection';
 export { default as ConnectSection } from './ConnectSection';
 export { default as Footer } from './Footer';
 export {default as GallerySection } from './GallerySection';
+export {default as MissionVisionSection } from './MissionVisionSection';

@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import '../styles/components/Navbar.css';
-import { Link, useLocation } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import "../styles/components/Navbar.css";
+import { Link, useLocation } from "react-router-dom";
 
-import facebookIcon from '../assets/icons/facebook.svg';
-import instagramIcon from '../assets/icons/instagram.svg';
-import searchIcon from '../assets/icons/search.svg';
-import churchLogo from '../assets/svg/church_logo.svg';
+import facebookIcon from "../assets/icons/facebook.svg";
+import instagramIcon from "../assets/icons/instagram.svg";
+import searchIcon from "../assets/icons/search.svg";
+import churchLogo from "../assets/svg/church_logo.svg";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,20 +13,41 @@ const Navbar = () => {
   const location = useLocation();
 
   const navLinks = [
-    { label: 'Home', href: '/' },
+    { label: "Home", href: "/" },
     {
-      label: 'Charity',
-      href: '#',
+      label: "Charity",
+      href: "#",
       subLinks: [
-        { label: 'View All', href: '/charity' },
-        { label: 'Kids', href: '#' },
-        { label: 'Leadership', href: '#' },
-        { label: 'Life Groups', href: '#' },
+        { label: "View All", href: "/charity" },
+        { label: "Kids", href: "#" },
+        { label: "Leadership", href: "#" },
+        { label: "Life Groups", href: "#" },
       ],
     },
-    { label: 'Pages', href: '#', subLinks: ['About Us', 'Blog', 'Contacts', 'Shop'] },
-    { label: 'Sermons', href: '#', subLinks: ['View All', 'Humility in Prayer', 'Jesus Came to bring Joy'] },
-    { label: 'Campaigns', href: '#', subLinks: ['View All', "Children's Outreach Summer Camp", 'Equipping Church Leaders'] },
+    {
+      label: "Pages",
+      href: "#",
+      subLinks: [
+        { label: "About Us", href: "/about-us" },
+        { label: "Blog", href: "#" },
+        { label: "Contacts", href: "#" },
+        { label: "Shop", href: "#" },
+      ],
+    },
+    {
+      label: "Sermons",
+      href: "#",
+      subLinks: ["View All", "Humility in Prayer", "Jesus Came to bring Joy"],
+    },
+    {
+      label: "Campaigns",
+      href: "#",
+      subLinks: [
+        "View All",
+        "Children's Outreach Summer Camp",
+        "Equipping Church Leaders",
+      ],
+    },
   ];
 
   const toggleMenu = () => {
@@ -43,13 +64,17 @@ const Navbar = () => {
   // Close menu when clicking outside
   useEffect(() => {
     const closeMenu = (e) => {
-      if (isMenuOpen && !e.target.closest('.nav-links') && !e.target.closest('.menu-toggle')) {
+      if (
+        isMenuOpen &&
+        !e.target.closest(".nav-links") &&
+        !e.target.closest(".menu-toggle")
+      ) {
         setIsMenuOpen(false);
       }
     };
 
-    document.addEventListener('click', closeMenu);
-    return () => document.removeEventListener('click', closeMenu);
+    document.addEventListener("click", closeMenu);
+    return () => document.removeEventListener("click", closeMenu);
   }, [isMenuOpen]);
 
   // Close menu when route changes
@@ -67,11 +92,13 @@ const Navbar = () => {
       <div className="logo">
         <img src={churchLogo} alt="Church Logo" />
       </div>
-      <div className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
+      <div className={`nav-links ${isMenuOpen ? "open" : ""}`}>
         {navLinks.map((link, index) => (
           <div
             key={index}
-            className={`nav-item ${openDropdown === index ? 'open' : ''} ${isActive(link.href) ? 'active' : ''}`}
+            className={`nav-item ${openDropdown === index ? "open" : ""} ${
+              isActive(link.href) ? "active" : ""
+            }`}
           >
             {link.subLinks ? (
               <span onClick={() => toggleDropdown(index)}>{link.label}</span>
@@ -81,12 +108,12 @@ const Navbar = () => {
             {link.subLinks && (
               <div className="dropdown">
                 {link.subLinks.map((subLink, subIndex) =>
-                  typeof subLink === 'string' ? (
+                  typeof subLink === "string" ? (
                     <Link key={subIndex} to="#">
                       {subLink}
                     </Link>
                   ) : (
-                    <Link key={subIndex} to={subLink.href || '#'}>
+                    <Link key={subIndex} to={subLink.href || "#"}>
                       {subLink.label}
                     </Link>
                   )
@@ -125,7 +152,7 @@ const Navbar = () => {
         </a>
       </div>
       <div className="menu-toggle" onClick={toggleMenu}>
-        <div className={`menu-icon ${isMenuOpen ? 'open' : ''}`}>
+        <div className={`menu-icon ${isMenuOpen ? "open" : ""}`}>
           <span></span>
           <span></span>
           <span></span>

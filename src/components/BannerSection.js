@@ -6,9 +6,12 @@ const BannerSection = () => {
     <div className="banner-section">
       <div className="banner-content">
         <div className="left-content">
-          <h1>A place where you belong</h1>
+          <h1>
+          Welcome to our family of love!
+          {/* It is a pleasure to have you here.  */}
+          </h1>
           <p className="service-time">
-            Join us every Sunday at 10:40 AM in Person + Online
+            Join us every Sunday and wednesday in Person + Online
           </p>
         </div>
         <div className="right-content">

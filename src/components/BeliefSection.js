@@ -1,9 +1,10 @@
-import React, { useState, useRef } from 'react';
-import '../styles/components/BeliefSection.css';
-import pastorPreach1 from '../assets/videos/pastor_preach1.mp4'; 
-import homeImg1 from '../assets/images/homeImg1.jpg';
-import { Play } from 'lucide-react';
+import React, { useState, useRef } from "react";
+import { Link } from "react-router-dom";
 
+import "../styles/components/BeliefSection.css";
+import pastorPreach1 from "../assets/videos/pastor_preach1.mp4";
+import homeImg1 from "../assets/images/homeImg1.jpg";
+import { Play } from "lucide-react";
 
 const BeliefsSection = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -26,8 +27,16 @@ const BeliefsSection = () => {
         <div className="beliefs-text">
           <h2>BELIEFS THAT UNIT US</h2>
           <h1>Empowered by God to others for Christ</h1>
-          <p>Our community makes us unique. They have an energy that reverberates around them. their mission in life is to ensure the wonder in the is not overlooked.</p>
-          <button className="more-about-us">More About Us</button>
+          <p>
+            Our community makes us unique. They have an energy that reverberates
+            around them. their mission in life is to ensure the wonder in the is
+            not overlooked.
+          </p>
+          <button className="more-about-us">
+            <Link to="/about-us">
+              More About Us
+            </Link>
+          </button>
         </div>
         <div className="beliefs-image">
           <img src={homeImg1} alt="Beliefs" />
@@ -42,7 +51,6 @@ const BeliefsSection = () => {
           <button className="attend-online">Attend Service Online</button>
         </div>
       </div>
-
 
       <div className="video-section">
         <div className="video-container">
