@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import styles from '../styles/components/module/LocationSection.module.css';
-import LocationImg from '../assets/images/locationImg.jpg';
+import LocationImg from '../assets/images/church-location2.jpg';
 
 const LocationsSection = () => {
   const sectionRef = useRef(null);

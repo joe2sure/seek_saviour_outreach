@@ -3,15 +3,15 @@ import React, { useRef, useEffect, useState } from 'react';
 import '../styles/components/MinistriesSection.css';
 // import ministrySectionImg from '../assets/images/bible.jpg';
 import ministrySectionImg from '../assets/images/wife-husband.png';
-import youthImg from '../assets/images/youthImg.jpg';
-import outReachImg from '../assets/images/outreachImg.jpg';
-import leadershipImg from '../assets/images/leadershipImg.jpg';
-import lifeGroupImg from '../assets/images/leadershipImg.jpg';
-import worshipImg from '../assets/images/worshipImg.jpg';
-import charityImg from '../assets/images/charityImg.jpg';
+import youthImg from '../assets/images/churchImg2.jpg';
+import outReachImg from '../assets/images/img_ppl1.jpg';
+import leadershipImg from '../assets/images/img_ppl2.jpg';
+import lifeGroupImg from '../assets/images/churchImg1.jpg';
+import worshipImg from '../assets/images/pastor_preach2.jpg';
+import charityImg from '../assets/images/churchImg2.jpg';
 import missionaryImg from '../assets/images/missionaryImg.jpg';
-import familyImg from '../assets/images/familyImg.jpg';
-import prayerImg from '../assets/images/prayerImg.jpg';
+import familyImg from '../assets/images/img_ppl1.jpg';
+import prayerImg from '../assets/images/pastor_preach3.jpg';
 
 const MinistriesSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -21,10 +21,10 @@ const MinistriesSection = () => {
     { title: 'Leadership', image: leadershipImg },
     { title: 'Life Groups', image: lifeGroupImg },
     { title: 'Worship', image: worshipImg },
+    { title: 'Prayer', image: prayerImg },
     { title: 'Charity', image: charityImg },
     { title: 'Missionaries', image: missionaryImg },
     { title: 'Families', image: familyImg },
-    { title: 'Prayer', image: prayerImg },
   ];
 
 
