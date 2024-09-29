@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../styles/components/charity/CharityTestimonialSection.css';
 import mumImg from '../../assets/images/charity/mum1.jpg';
-import sundayImg from '../../assets/images/charity/sunday.png';
+import sundayImg from '../../assets/images/charity/president-img.png';
 import authorImg from '../../assets/images/charity/author.jpg';
 import shape from '../../assets/images/charity/shape.png';
 
