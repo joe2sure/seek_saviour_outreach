@@ -14,7 +14,7 @@ const AboutUs = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
         className="about-us-content"
-      >
+      > 
         <h1>About Us</h1>
         {/* <WelcomeNote /> */}
         <WhoWeAre />
