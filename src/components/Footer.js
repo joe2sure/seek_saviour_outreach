@@ -41,7 +41,7 @@ const Footer = () => {
           <a href="/blog" className={styles.footerLink}>Blog</a>
         </nav>
         <p className={styles.copyright}>
-          joeConcept@2024 - All Rights Reserved (Joe2sure@gmail.com)
+        &copy; 2025 TrackSkool. All rights reserved.
         </p>
       </div>
     </footer>

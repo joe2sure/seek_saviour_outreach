@@ -79,6 +79,55 @@
   animation: dropdownFade 0.3s ease;
 }
 
+.dropdown-button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-button:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* Ensure nav-item spans with role="button" have proper cursor */
+.nav-item span[role="button"] {
+  cursor: pointer;
+}
+
+.nav-item span[role="button"]:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* Icon link button styles */
+.icon-link[role="button"],
+.give-button[type="button"] {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.icon-link[role="button"]:focus,
+.give-button:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
 @keyframes dropdownFade {
   from {
     opacity: 0;
@@ -121,6 +170,7 @@
 }
 
 .give-button {
+  background-color: transparent;
   display: inline-block;
   padding: 10px 20px;
   border: 1px solid white;

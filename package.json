@@ -29,8 +29,18 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
-    ]
+      "react-app/jest",
+      "plugin:react-hooks/recommended",
+      "plugin:jsx-a11y/recommended"
+    ],
+    "plugins": [
+    "react-hooks",
+    "jsx-a11y"
+    ],
+    "rules": {
+    "react-hooks/exhaustive-deps": "warn",
+    "jsx-a11y/anchor-is-valid": "warn"
+  }
   },
   "browserslist": {
     "production": [
