@@ -1,17 +1,18 @@
+// src/Pages/Charity.js
 import React from 'react';
-import { 
-  CharityBanner, 
-  CharityDonationCTA, 
-  CharityEventsSection, 
-  CharityFunFactSection, 
-  CharityInfoSection, 
-  CharityPartnersSection, 
-  CharityPromotionSection, 
-  CharityServicesSection, 
-  CharitySliderSection, 
-  CharityTestimonialSection 
+import {
+  CharityBanner,
+  CharityDonationCTA,
+  CharityEventsSection,
+  CharityFunFactSection,
+  CharityInfoSection,
+  CharityPartnersSection,
+  CharityPromotionSection,
+  CharityServicesSection,
+  CharitySliderSection,
+  CharityTestimonialSection,
+  CharityEventGallery,        // <-- NEW
 } from '../components/charity/index.js';
-import '../styles/components/charity/Charity.css';
 import '../styles/components/charity/Charity.css';
 
 const CharityPage = () => {
@@ -19,18 +20,57 @@ const CharityPage = () => {
     <div className="charity-page">
       <CharityBanner />
       <main className="charity-main-content">
+        <CharityEventGallery />
         <CharityInfoSection />
-        <CharityPromotionSection/>
+        <CharityPromotionSection />
         <CharityServicesSection />
-        <CharityDonationCTA/>
-        <CharityEventsSection/>
-        <CharityFunFactSection />
-        <CharitySliderSection/>
+        <CharityDonationCTA />
+        <CharityEventsSection />
+        <CharityFunFactSection /> 
+        <CharitySliderSection />
         <CharityTestimonialSection />
-        <CharityPartnersSection/>
+        <CharityPartnersSection />
       </main>
     </div>
   );
 };
 
 export default CharityPage;
+
+
+// import React from 'react';
+// import { 
+//   CharityBanner, 
+//   CharityDonationCTA, 
+//   CharityEventsSection, 
+//   CharityFunFactSection, 
+//   CharityInfoSection, 
+//   CharityPartnersSection, 
+//   CharityPromotionSection, 
+//   CharityServicesSection, 
+//   CharitySliderSection, 
+//   CharityTestimonialSection 
+// } from '../components/charity/index.js';
+// import '../styles/components/charity/Charity.css';
+// import '../styles/components/charity/Charity.css';
+
+// const CharityPage = () => {
+//   return (
+//     <div className="charity-page">
+//       <CharityBanner />
+//       <main className="charity-main-content">
+//         <CharityInfoSection />
+//         <CharityPromotionSection/>
+//         <CharityServicesSection />
+//         <CharityDonationCTA/>
+//         <CharityEventsSection/>
+//         <CharityFunFactSection />
+//         <CharitySliderSection/>
+//         <CharityTestimonialSection />
+//         <CharityPartnersSection/>
+//       </main>
+//     </div>
+//   );
+// };
+
+// export default CharityPage;

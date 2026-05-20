@@ -8,3 +8,4 @@ export { default as CharityFunFactSection } from './CharityFunFactSection';
 export { default as CharityTestimonialSection } from './CharityTestimonialSection';
 export { default as CharitySliderSection } from './CharitySliderSection';
 export { default as CharityPartnersSection } from './CharityPartnersSection';
+export { default as CharityEventGallery }     from './CharityEventGallery';
